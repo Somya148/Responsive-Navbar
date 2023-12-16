@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">Somya</a></div>
+
+            <ul class="links">
+                <li><a href="#">Home</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="/education.html">Projects</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+            <a href="#" class="action_button">Get Started</a>
+            <div class="toggle_button">
+
+                <i class="fa fa-bars"></i>
+
+            </div>
+
+
+        </div>
+        <div class="dropdown">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact Me</a></li>
+            <li><a href="#" class="action_button">Get Started</a></li>
+        </div>
+    </header>
+
+    <!-- main -->
+    <div class="main">
+<section id="Hero">
+
+
+            <h1>WELCOME</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br>
+                quidem nam, quos harum similique iusto, enim minus.</p>
+       
+   
+</section>
+</div>
+    <script>
+        const togglebutton = document.querySelector('.toggle_button');
+        const togglebuttonIcon = document.querySelector('.toggle_button i');
+        const dropdownMenu = document.querySelector('.dropdown');
+
+        togglebutton.onclick = function () {
+            dropdownMenu.classList.toggle('open');
+            const isopen = dropdownMenu.classList.contains('open');
+
+            togglebuttonIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa fa-bars'
+        }
+    </script>
+  
+</body>
+
+</html>
