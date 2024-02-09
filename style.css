@@ -6,7 +6,7 @@
 }
 body{
     background-color: rgba(0, 0, 0, 0.767);
-    background-image: url("./assets/Background\ image.jpg");
+    background-image: url("Background\ image.jpg");
     background-position: center;
     background-size: cover;
     height:100vh;
